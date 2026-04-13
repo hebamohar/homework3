@@ -96,9 +96,6 @@
       return true;
     }
 
-    /* =========================
-       ADDED JAVASCRIPT
-       ========================= */
 
     function setError(id, msg){
       document.getElementById(id).innerText = msg;
@@ -240,6 +237,7 @@
             <td>First Name:</td>
             <td>
               <input name="fname" type="text" maxlength="30" required
+                placeholder="John"
                 oninput="validateName(this,'fnameError')"
                 onblur="validateName(this,'fnameError')" />
               <span id="fnameError" class="error"></span>
@@ -248,6 +246,7 @@
             <td>Middle Initial:</td>
             <td>
               <input name="mi" type="text" maxlength="1"
+                placeholder="M"
                 oninput="validateMI(this,'miError')"
                 onblur="validateMI(this,'miError')" />
               <span id="miError" class="error"></span>
@@ -256,6 +255,7 @@
             <td>Last Name:</td>
             <td>
               <input name="lname" type="text" maxlength="30" required
+                placeholder="Smith"
                 oninput="validateName(this,'lnameError')"
                 onblur="validateName(this,'lnameError')" />
               <span id="lnameError" class="error"></span>
@@ -266,6 +266,7 @@
             <td>Date of Birth (MM/DD/YYYY):</td>
             <td>
               <input name="dob" type="text" required
+                placeholder="MM/DD/YYYY"
                 onblur="validateDOB(this,'dobError')" />
               <span id="dobError" class="error"></span>
             </td>
@@ -273,6 +274,7 @@
             <td>Social Security:</td>
             <td>
               <input name="ssn" type="password"
+                placeholder="123-45-6789"
                 oninput="formatSSN(this)"
                 onblur="validateSSN(this,'ssnError')" />
               <span id="ssnError" class="error"></span>
@@ -281,15 +283,15 @@
 
           <tr>
             <td>Address Line 1:</td>
-            <td><input name="addr1" type="text" maxlength="30" required /></td>
+            <td><input name="addr1" type="text" maxlength="30" required placeholder="123 Main St" /></td>
 
             <td>Address Line 2:</td>
-            <td><input name="addr2" type="text" maxlength="30" /></td>
+            <td><input name="addr2" type="text" maxlength="30" placeholder="Apt 4" /></td>
           </tr>
 
           <tr>
             <td>City:</td>
-            <td><input name="city" type="text" maxlength="30" required /></td>
+            <td><input name="city" type="text" maxlength="30" required placeholder="Houston" /></td>
 
             <td>State:</td>
             <td>
@@ -352,6 +354,7 @@
             <td>Zip Code:</td>
             <td>
               <input name="zip" type="text"
+                placeholder="77009"
                 oninput="validateZip(this,'zipError')"
                 onblur="validateZip(this,'zipError')" />
               <span id="zipError" class="error"></span>
@@ -362,26 +365,27 @@
             <td>Email Address:</td>
             <td>
               <input name="email" type="email"
+                placeholder="name@email.com"
                 oninput="validateEmail(this,'emailError')"
                 onblur="validateEmail(this,'emailError')" />
               <span id="emailError" class="error"></span>
             </td>
 
             <td>Phone Number:</td>
-            <td><input name="phone" type="text" /></td>
+            <td><input name="phone" type="text" placeholder="713-555-1212" /></td>
           </tr>
 
           <tr>
             <td>User ID:</td>
-            <td><input name="userid" type="text" required /></td>
+            <td><input name="userid" type="text" required placeholder="username123" /></td>
           </tr>
 
           <tr>
             <td>Password:</td>
-            <td><input name="password" type="password" required /></td>
+            <td><input name="password" type="password" required placeholder="Strong password" /></td>
 
             <td>Re-enter Password:</td>
-            <td><input name="password2" type="password" required /></td>
+            <td><input name="password2" type="password" required placeholder="Re-enter password" /></td>
           </tr>
 
           <tr>
